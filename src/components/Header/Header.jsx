@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import styles from "./Header.module.scss";
 import userIcon from "../../assets/icons/user.svg";
 import cartIcon from "../../assets/icons/cart.svg";
@@ -13,22 +15,22 @@ const Header = () => {
         <nav className={styles.navigation} aria-label="Главное меню">
           <ul>
             <li>
-              <a href="/about">КАТАЛОГ</a>
+              <a href="/catalog">КАТАЛОГ</a>
             </li>
             <li>
-              <a href="/products">О КОМПАНИИ</a>
+              <Link to="/about">О КОМПАНИИ</Link>
             </li>
             <li>
-              <a href="/services">КАК КУПИТЬ</a>
+              <a href="/">КАК КУПИТЬ</a>
             </li>
             <li>
-              <a href="/contacts">ДОСТАВКА</a>
+              <a href="/">ДОСТАВКА</a>
             </li>
             <li>
-              <a href="/contacts">ГДЕ КУПИТЬ</a>
+              <a href="/">ГДЕ КУПИТЬ</a>
             </li>
             <li>
-              <a href="/contacts">КОНТАКТЫ</a>
+              <Link to="/contacts">КОНТАКТЫ</Link>
             </li>
           </ul>
         </nav>
@@ -45,6 +47,7 @@ const Header = () => {
           </a>
         </div>
       </div>
+      <hr />
     </div>
   );
 };
