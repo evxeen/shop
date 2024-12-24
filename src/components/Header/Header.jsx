@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 import styles from "./Header.module.scss";
-import userIcon from "../../assets/icons/user.svg";
-import cartIcon from "../../assets/icons/cart.svg";
-import homeIcon from "../../assets/icons/home.svg";
+import userIcon from "../../../public/assets/icons/user.svg";
+import cartIcon from "../../../public/assets/icons/cart.svg";
+import homeIcon from "../../../public/assets/icons/home.svg";
 
 const Header = () => {
   return (
